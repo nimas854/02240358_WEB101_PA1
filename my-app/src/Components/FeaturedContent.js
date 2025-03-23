@@ -1,4 +1,3 @@
-import { FaFacebook, FaTwitter, FaShareAlt, FaPlay } from "react-icons/fa"
 import "./FeaturedContent.css"
 
 function FeaturedContent() {
@@ -10,15 +9,9 @@ function FeaturedContent() {
             <img src="/images/smackdown-logo.png" alt="SmackDown" />
           </div>
           <div className="social-share">
-            <button>
-              <FaFacebook />
-            </button>
-            <button>
-              <FaTwitter />
-            </button>
-            <button>
-              <FaShareAlt />
-            </button>
+            <button>FB</button>
+            <button>TW</button>
+            <button>Share</button>
           </div>
         </div>
 
@@ -36,7 +29,7 @@ function FeaturedContent() {
               Results
             </a>
             <a href="/" className="btn btn-solid">
-              <FaPlay /> Watch Highlights
+              Watch Highlights
             </a>
           </div>
         </div>
@@ -46,4 +39,6 @@ function FeaturedContent() {
 }
 
 export default FeaturedContent
+
+
 

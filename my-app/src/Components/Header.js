@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { FaSearch, FaUser, FaBars } from "react-icons/fa"
 import "./Header.css"
 
 function Header() {
@@ -19,7 +18,7 @@ function Header() {
         </div>
 
         <button className="mobile-menu-btn" onClick={toggleMenu}>
-          <FaBars />
+          Menu
         </button>
 
         <nav className={`main-nav ${menuOpen ? "open" : ""}`}>
@@ -46,12 +45,8 @@ function Header() {
           <div className="peacock-logo">
             <img src="/images/peacock-logo.png" alt="Peacock" />
           </div>
-          <button className="icon-btn">
-            <FaUser />
-          </button>
-          <button className="icon-btn">
-            <FaSearch />
-          </button>
+          <button className="icon-btn">User</button>
+          <button className="icon-btn">Search</button>
         </div>
       </div>
     </header>
@@ -59,4 +54,6 @@ function Header() {
 }
 
 export default Header
+
+
 
