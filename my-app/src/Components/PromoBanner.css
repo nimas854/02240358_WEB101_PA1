@@ -1,0 +1,91 @@
+.promo-banner {
+    background-color: #000;
+    background-image: url('/images/slammy-awards-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+  .promo-content {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .promo-left {
+    flex: 0 0 auto;
+    margin-right: 1.5rem;
+  }
+  
+  .vote-button {
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  .promo-center {
+    flex: 1;
+  }
+  
+  .promo-center h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .promo-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .promo-cta {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  
+  .promo-cta:hover {
+    opacity: 0.8;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .promo-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.75rem;
+    }
+    
+    .promo-left {
+      margin-right: 0;
+    }
+    
+    .promo-right {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  

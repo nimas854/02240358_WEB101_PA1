@@ -1,0 +1,135 @@
+.header {
+    background-color: #000;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .logo-container {
+    flex: 0 0 auto;
+  }
+  
+  .logo img {
+    height: 2.5rem;
+    width: auto;
+  }
+  
+  .main-nav {
+    flex: 1;
+    margin: 0 2rem;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  
+  .main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  
+  .main-nav a:hover {
+    color: #d4d4d4;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .peacock-logo img {
+    height: 1.5rem;
+    width: auto;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .mobile-menu-toggle span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 992px) {
+    .mobile-menu-toggle {
+      display: flex;
+    }
+  
+    .main-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      margin: 0;
+    }
+  
+    .main-nav.open {
+      max-height: 300px;
+    }
+  
+    .main-nav ul {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .main-nav li {
+      padding: 0.5rem 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .peacock-logo {
+      display: none;
+    }
+  }
+  
